@@ -184,6 +184,7 @@ height: 534px;
 .content__details {
   height: auto;
   width: auto;
+  align-self: flex-start;
 }
 
 .title {
@@ -203,7 +204,7 @@ height: 534px;
 
 .content__list {
   max-height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -240,8 +241,6 @@ height: 534px;
 .content__video-card:hover .content__video-card-description-container {
   text-decoration: underline #FFF;
 }
-
-
 
 .content__video-card-description-container {
   flex-grow: 1;
