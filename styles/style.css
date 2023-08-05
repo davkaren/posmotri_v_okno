@@ -36,3 +36,253 @@ ul,
 ol {
   list-style: none;
 }
+
+.page {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+display: flex;
+gap: 30px;
+align-items: end;
+max-width: 1140px;
+height: 534px;
+}
+
+.result__video-container {
+  min-height: 386px;
+  min-width: 711px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__label {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFF;
+}
+
+.search-form__label:hover .search-form__label-text {
+  border-bottom: 1px solid #FFF;
+}
+
+.search-form__textfield {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  width: 225px;
+  font-family: 'Fira Sans Condensed';
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.search-form__pseudo-checkbox:active {
+  width: 17px;
+  height: 17px;
+  background-color: #FFF;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  outline-offset: 2px;
+  outline: 1px solid #FFF;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  width: 17px;
+  height: 17px;
+  background-color: #FFF;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  outline-offset: 2px;
+  outline: 1px solid #FFF;
+}
+
+.button {
+  background: none;
+  color: #FFF;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline #FFF;
+}
+
+.button:active {
+  background: #545050;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  align-self: self-end;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
+}
+
+.content__details {
+  height: auto;
+  width: auto;
+}
+
+.title {
+  margin-bottom: 26px;
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  max-height: 298px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.content__list-item {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.content__list-item:first-child {
+  margin-top: 1px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: start;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__list-item:has(:focus-visible) {
+  outline: 1px solid #FFF;
+}
+
+.content__video-card:hover .content__video-card-description-container {
+  text-decoration: underline #FFF;
+}
+
+
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-thumbnail {
+  max-width: 194px;
+  max-height: 103px;
+  object-fit: cover;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  line-height: 16.2px;
+  margin-top: 6px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
