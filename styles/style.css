@@ -187,7 +187,7 @@ max-width: 1140px;
 .title {
   margin-bottom: 26px;
   color: #FFF;
-  font-family: Oswald, sans-serif;;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -268,7 +268,6 @@ max-width: 1140px;
 
 .content__video-card-description {
   line-height: 16.2px;
-  margin-top: 6px;
 }
 
 .visually-hidden {
